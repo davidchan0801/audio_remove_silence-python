@@ -14,7 +14,8 @@ from pydub.silence import split_on_silence
 # The generated new files stored in output folder
 
 file_extension = ["wav"]
-shutil.rmtree("output")
+if (os.path.isdir("output")):
+  shutil.rmtree("output")
 os.mkdir("output")
 
 for entry in os.scandir('.'):
