@@ -10,7 +10,7 @@ from pydub.silence import split_on_silence
 
 # Description
 # The sample project provide you an example to remove silence part in audios and save to new audios.
-# Please put images in root directory.
+# Please put audios in root directory.
 # The generated new files stored in output folder
 
 file_extension = ["wav"]
